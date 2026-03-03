@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarky.ca</title>
+    <title>Clarky.ca - Inbound Transmission</title>
     <style>
+        /* Dark Mode by default - No white screens allowed */
         body {
-            background-color: black;
-            color: white;
+            background-color: #000;
             margin: 0;
+            padding: 0;
             display: flex;
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center;     
-            height: 100vh;           
-            text-align: center;
-            overflow: hidden; /* Prevents accidental scrollbars on mobile */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Stops the "buggy" scrollbars */
         }
 
-        .banner {
-            background-image: url('Scrolling-Text-Getsitecontrol.gif'); 
-            background-repeat: no-repeat; 
-            background-position: center; /* Keeps it centered in the 75% window */
-            background-size: contain;    /* Scales the GIF so it fits the width */
-            height: 142px; 
-            width: 75%;
+        .space-void {
+            /* Your 75% width "Genius" fix for centering */
+            width: 75%; 
+            height: 142px;
+            background-image: url('Scrolling-Text-Getsitecontrol.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Ensures the GIF scales down for phone screens */
+            background-size: contain; 
         }
     </style>
 </head>
 <body>
-    <div class="banner"></div>
+
+    <div class="space-void"></div>
+
 </body>
 </html>
