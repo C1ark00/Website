@@ -1,21 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Clarky.ca</title>
-<style>
-    body {
-        background-color: black;
-        color: white;
-        margin: 0;
-        /* This is the magic part */
-        display: flex;
-        flex-direction: column; /* Stack the H1 and the Image */
-        justify-content: center; /* Vertical center */
-        align-items: center;     /* Horizontal center */
-        height: 100vh;           /* Use 100% of the viewport height */
-        text-align: center;
-    }
-</style></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarky.ca</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;           
+            text-align: center;
+            overflow: hidden; /* Prevents accidental scrollbars on mobile */
+        }
+
+        .banner {
+            background-image: url('Scrolling-Text-Getsitecontrol.gif'); 
+            background-repeat: no-repeat; 
+            background-position: center; /* Keeps it centered in the 75% window */
+            background-size: contain;    /* Scales the GIF so it fits the width */
+            height: 142px; 
+            width: 75%;
+        }
+    </style>
+</head>
 <body>
-<div style="background-image: url('Scrolling-Text-Getsitecontrol.gif'); background-repeat: repeat-x; height: 142px; width: 75%;"></div>
+    <div class="banner"></div>
 </body>
 </html>
