@@ -20,7 +20,7 @@
 
         .space-void {
             text-align: center;
-            color: #00ff66; /* Terminal green vibe, or use #fff for pure white */
+            color: #00ff66; /* Terminal green vibe */
             padding: 20px;
         }
 
@@ -34,8 +34,29 @@
         p {
             color: #888;
             font-size: 1rem;
-            margin: 0;
+            margin: 0 0 25px 0;
             letter-spacing: 1px;
+        }
+
+        /* Sci-Fi Terminal Style Button */
+        .etsy-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            color: #00ff66;
+            border: 2px solid #00ff66;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 8px rgba(0, 255, 102, 0.3);
+        }
+
+        .etsy-btn:hover {
+            background-color: #00ff66;
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 255, 102, 0.8);
         }
     </style>
 </head>
@@ -43,7 +64,10 @@
 
     <div class="space-void">
         <h1>Welcome to Clarky.ca</h1>
-        <p>Inbound Transmission: System Under Construction</p>
+        <p>Inbound Transmission: Main Site Under Construction</p>
+        <a href="https://clarkystudio.etsy.com" class="etsy-btn" target="_blank" rel="noopener noreferrer">
+            Visit Etsy Store
+        </a>
     </div>
 
 </body>
